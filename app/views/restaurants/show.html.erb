@@ -6,4 +6,6 @@ Category : <%= @restaurant.category.capitalize %>
 <h4>Phone number : </h4><%= @restaurant.phone_number %>
 <br>
 
+<%= link_to "Give a review", new_restaurant_review_path(@restaurant) %>
+<br>
 <%= link_to "Back to the list", restaurants_path %>
